@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Video</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, rgba(255, 192, 203, 0.4), rgba(255, 182, 193, 0.6)),
+                  url('pozadine/pozadina1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: rgba(255, 182, 193, 0.85);
+      padding: 1.2rem 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 10px 18px;
+      border-radius: 25px;
+      transition: all 0.3s ease-in-out;
+      background-color: rgba(255, 105, 180, 0.5);
+    }
+
+    nav ul li a:hover {
+      background-color: #ff69b4;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.5);
+    }
+
+    .video-section {
+      text-align: center;
+      padding: 70px 20px 50px;
+    }
+
+    .video-section h1 {
+      font-size: 3.2rem;
+      margin-bottom: 12px;
+      color: #ff69b4;
+    }
+
+    .video-section h2 {
+      font-size: 1.9rem;
+      color: #ffe4e1;
+      margin-bottom: 25px;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 800px; 
+      margin: 0 auto 30px;
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-section p {
+      max-width: 620px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 25px;
+      border-radius: 18px;
+      text-align: justify;
+      color: #fffafc;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .video-section h1 {
+        font-size: 2.4rem;
+      }
+
+      .video-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .video-container {
+        max-width: 90%;
+      }
+
+      .video-container video {
+        height: auto;
+      }
+
+      .video-section p {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="o_meni.html">O Meni</a></li>
+        <li><a href="vjezbe.html">Vježbe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="video-section">
+      <h1>Video</h1>
+      <h2>K-SECRET SEOUL 1988 - REKLAMA</h2>
+      <div class="video-container">
+        <video controls>
+          <source src="video/video1.mp4" type="video/mp4">
+          Vaš preglednik ne podržava video element.
+        </video>
+      </div>
+      <p>
+	  <b>Postupak snimanja video reklame:</b>
+	  Najprije sam snimila 7 videa posebno sa proizvodom, te sam sve organizirala u mapu i imenovala. Pronašla sam odgovarajuću pozadinsku glazbu i to sve dodala u program DaVinci Resolve. Videe sam izrezivala i na neke stavila efekte poput crno bijelog izgleda, ubrzavanja/usporavanja ili fade in/ fade out.Tako sam i za pomični tekst napravila uvećavanje teksta a statični tekst sam samo uredila i dodala fade in/fade out.
+Zvuk (glazba) dodana je pomoću import media i skraćena da odgovara dužini videa.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
+
